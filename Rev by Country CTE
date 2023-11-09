@@ -1,0 +1,10 @@
+### Here is a Common table expression analyzing which countries created the highest revenue along with their customer counts
+
+SELECT A.country, SUM(E.amount) AS Revenue, COUNT(D.customer_id) AS Customer_Count
+FROM country A
+INNER JOIN city B ON A.country_id = B.country_id
+INNER JOIN address C ON B.city_id
+INNER JOIN customer D ON C.address_id = D.address_id
+INNER JOIN payment E ON D.customer_id = E.customer_id
+GROUP BY A.country
+ORDER BY Revenue DESC
