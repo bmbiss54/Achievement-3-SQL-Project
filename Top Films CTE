@@ -1,4 +1,4 @@
-Here is a SQL Query with a common table expression to determine the top performing films in the rockbuster database
+### Here is a SQL Query with a common table expression to determine the top performing films in the rockbuster database
 
 SELECT A.title, SUM(D.amount) AS Revenue
 From film A
