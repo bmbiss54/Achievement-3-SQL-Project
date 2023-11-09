@@ -1,0 +1,9 @@
+#Finding the top Revenue generators by film rating category
+
+SELECT A.rating, SUM(D.amount AS Revenue
+FROM film A
+INNER JOIN inventory B ON A.film_id = C.inventory_id
+INNER JOIN rental C ON B.inventory_id = C.inventory_id
+INNER JOIN payment D ON C.rental_id = D.rental_id
+GROUP BY A.rating
+ORDER BY Revenue DESC
