@@ -1,4 +1,4 @@
-# SQL
+# Achievement 3 SQL: Rockbuster Stealth Data Analysis
 This repository shows the SQL prompts build to adress the follow objective questions for Rockbuster Stealth Management Board:
 The Rockbuster Stealth Management Board has asked a series of business questions and they expect data-driven answers that they can use for their 2020 company strategy. Here are the main questions they’d like to answer:
 ● Which movies contributed the most/least to revenue gain?
